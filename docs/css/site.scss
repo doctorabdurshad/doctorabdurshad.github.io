@@ -1,0 +1,123 @@
+--- 
+--- 
+
+body {
+  background-color: #FCFCFC;
+  color: black;
+  font-size: 1.2rem;
+}
+
+$off_white: #FCFCFC;
+$dark_blue: #00337f;
+$light_blue: #d9e2f0;
+
+h1, h2, h3, h4 {
+  font-family: "Ledger", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+p {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  color: $dark_blue;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+li {
+  font-size: 1.2rem;
+  font-family: "Source Sans 3", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+hr {
+  color: black;
+  opacity: 0.5;
+}
+
+.hero {
+  background: linear-gradient(to top, $off_white 50%, $light-blue 50%);
+  padding: 6rem;
+
+  @media (min-width: 1200px) {
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+
+  h2 {
+    font-size: calc(0.8rem + .9vw);
+  }
+}
+
+.hero-card {
+  background-color: $off_white;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  max-width: 60rem;
+}
+
+.card-info {
+  padding: 2rem;
+}
+
+.profile-img {
+  width: 100%
+}
+
+.p-link {
+  color: $dark_blue;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.card-contact {
+  background-color: $light_blue;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+
+  .btn {
+    background-color: $dark_blue;
+    color: white;
+    font-size: 1.25rem;
+    border: 2px solid $dark_blue;
+    border-radius: 0.25rem;
+    text-wrap: nowrap;
+
+    &:hover {
+      background-color: $off_white;
+      color: $dark_blue;
+      text-decoration: underline;
+      transition: 0.4s ease-in-out;
+    }
+  }
+}
+
+.about {
+  padding: 1rem 6rem 4rem;
+}
+
+.insurance {
+  padding: 4rem 6rem;
+  background-color: $light_blue;
+}
+
+.links {
+  padding: 4rem 6rem;
+}

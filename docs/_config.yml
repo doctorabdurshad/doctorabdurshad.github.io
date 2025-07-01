@@ -1,0 +1,30 @@
+# --------------
+# -- Settings --
+# --------------
+
+title: Dr. Abdur R. Shad
+description: >-
+  
+baseurl: ""
+url: "https://doctorabdurshad.github.io/"
+
+# Compressed with TinyPNG
+images:
+  favicon: "/images/favicon.ico"
+  profile: "/images/doctor-male.svg"
+
+# Build settings
+theme: minima
+
+
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
