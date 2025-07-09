@@ -32,6 +32,10 @@ p {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+
+  @media (max-width: 550px) {
+    font-size: 1rem !important;
+  }
 }
 
 a {
@@ -52,6 +56,10 @@ li {
   font-size: 1.2rem;
   font-family: "Source Sans 3", sans-serif;
   margin-bottom: 0.5rem;
+
+  @media (max-width: 550px) {
+      font-size: 1rem !important;
+    }
 }
 
 hr {
@@ -59,9 +67,37 @@ hr {
   opacity: 0.5;
 }
 
+@media (max-width: 991px) {
+
+  .mobile-width {
+    width: 100% !important;
+  }
+
+  .mobile-margin {
+    margin: 1rem !important;
+  }
+}
+
+.mobile-button {
+  display: none;
+}
+
+@media (max-width: 400px) {
+  .desktop-button {
+    display: none !important;
+  }
+  .mobile-button {
+    display: inline-block !important;
+  }
+}
+
 .hero {
   background: linear-gradient(to top, $off_white 50%, $light-blue 50%);
-  padding: 6rem;
+  padding: 6rem 4vw;
+
+  @media (max-width: 767px) {
+    padding: 4rem 3vw;
+  }
 
   @media (min-width: 1200px) {
     h2 {
@@ -70,7 +106,7 @@ hr {
   }
 
   h2 {
-    font-size: calc(0.8rem + .9vw);
+    font-size: calc(0.9rem + .9vw);
   }
 }
 
@@ -83,10 +119,20 @@ hr {
 
 .card-info {
   padding: 2rem;
+
+  @media (max-width: 550px) {
+      padding: 1.5rem;
+    }
 }
 
 .profile-img {
-  width: 100%
+  width: 100%;
+
+  @media (max-width: 991px) {
+    width: auto !important;
+    max-width: 400px;
+    margin: 0 2rem 1rem 2rem;
+  }
 }
 
 .p-link {
@@ -102,7 +148,7 @@ hr {
 .card-contact {
   background-color: $light_blue;
   color: white;
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   text-align: center;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
@@ -125,6 +171,10 @@ hr {
     text-decoration: underline;
     transition: 0.4s ease-in-out;
   }
+
+    @media (max-width: 550px) {
+      font-size: 1rem;
+    }
 }
 
 .main {
@@ -133,9 +183,33 @@ hr {
     border-radius: 0.5rem;
     padding: 2rem 4rem;
     margin: 3rem 0;
+
+    @media (max-width: 767px){
+      padding: 2rem;
+    }
+
+    @media (max-width: 550px) {
+      padding: 1.5rem;
+    }
   }
 }
 
 #education, #office {
   background-color: $light_blue;
+
+  a {
+    color: black;
+  }
+}
+
+#education .col {
+  min-width: 240px;
+}
+
+.map {
+  height: 400px;
+
+  @media (max-width: 450px) {
+    height: 200px;
+  }
 }
