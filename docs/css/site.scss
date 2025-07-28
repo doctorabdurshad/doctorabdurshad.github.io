@@ -126,13 +126,12 @@ hr {
 }
 
 .profile-img {
-  width: 100%;
+  width: 90%;
+  border: 8px solid $light_blue;
 
   @media (max-width: 991px) {
-    width: auto !important;
-    max-width: 400px;
-    margin: 0 2rem 1rem 2rem;
-  }
+      max-width: 400px;
+    }
 }
 
 .p-link {
@@ -191,6 +190,27 @@ hr {
     @media (max-width: 550px) {
       padding: 1.5rem;
     }
+  }
+}
+
+.consult-img {
+  width: 100%;
+  min-width: 350px;
+  border: 8px solid $light_blue;
+  text-align: center;
+
+  @media (max-width: 500px) {
+     min-width: 200px;
+  }
+}
+
+.speaking-img {
+  width: 90%;
+  min-width: 180px;
+  border: 8px solid $off_white;
+
+  @media (max-width: 500px) {
+    min-width: 200px;
   }
 }
 

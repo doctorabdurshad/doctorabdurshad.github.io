@@ -11,7 +11,9 @@ url: "https://doctorabdurshad.github.io/"
 # Compressed with TinyPNG
 images:
   favicon: "/images/favicon.ico"
-  profile: "/images/doctor-male.svg"
+  profile: "/images/profile.png"
+  consult: "/images/consultation.png"
+  speaking: "/images/speaking.png"
 
 # Build settings
 theme: minima
