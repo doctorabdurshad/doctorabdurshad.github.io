@@ -5,6 +5,7 @@ body {
   background-color: #FCFCFC;
   color: black;
   font-size: 1.2rem;
+  font-weight: 400;
 }
 
 $off_white: #FCFCFC;
@@ -32,6 +33,7 @@ p {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  line-height: 1.8;
 
   @media (max-width: 550px) {
     font-size: 1rem !important;
@@ -75,6 +77,10 @@ hr {
 
   .mobile-margin {
     margin: 1rem !important;
+  }
+
+  .mobile-mb {
+    margin-bottom: 2rem !important;
   }
 }
 
@@ -193,7 +199,7 @@ hr {
   }
 }
 
-.consult-img {
+.landscape-img {
   width: 100%;
   min-width: 350px;
   border: 8px solid $light_blue;
@@ -204,7 +210,7 @@ hr {
   }
 }
 
-.speaking-img {
+.portrait-img {
   width: 90%;
   min-width: 180px;
   border: 8px solid $off_white;
@@ -214,7 +220,7 @@ hr {
   }
 }
 
-#education, #office {
+#telemedicine, #education, #office {
   background-color: $light_blue;
 
   a {

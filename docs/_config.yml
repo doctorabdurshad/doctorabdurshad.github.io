@@ -12,6 +12,8 @@ url: "https://doctorabdurshad.github.io/"
 images:
   favicon: "/images/favicon.ico"
   profile: "/images/profile.png"
+  nebulizer: "/images/nebulizer.png"
+  telemedicine: "/images/telemedicine.png"
   consult: "/images/consultation.png"
   speaking: "/images/speaking.png"
 

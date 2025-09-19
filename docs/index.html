@@ -5,11 +5,11 @@ layout: default
 {% include hero.html %}
 
 <div class="main container">
-  <section id="specialties">
+  <section id="specialties" class="mt-0">
     <h2 class="mb-4">Specialties</h2>
     <div class="row mobile-margin mx-5 align-items-center" style="flex-direction: row-reverse;">
       <div class="col d-flex justify-content-center">
-        <img class="consult-img mb-4" src="{{ site.images.consult }}">
+        <img class="landscape-img mb-4" src="{{ site.images.nebulizer }}">
       </div>
       <div class="col">
         <ul>
@@ -32,11 +32,53 @@ layout: default
       </div>
     </div>
   </section>
+
+  <section id="telemedicine">
+    <h2 class="mb-4">Telemedicine</h2>
+    <div class="row mobile-margin mx-5 align-items-center">
+      <div class="mobile-width col-4 d-flex justify-content-center">
+        <img class="portrait-img mb-4" src="{{ site.images.telemedicine }}">
+      </div>
+      <div class="mobile-width col-7 mx-auto">
+        <p>
+          Since the COVID-19 pandemic, telemedicine has become a safe and effective way for patients to receive medical care
+          without needing to leave the comfort of home. We are pleased to offer secure video visits so you can connect directly
+          to us while maintaining peace of mind and convenience.
+        </p>
+        <p>
+          If you are experiencing symptoms such as chest discomfort, nasal congestion, a lingering dry cough, shortness of breath,
+          or other breathing concerns, a telemedicine visit may be the right first step. During your appointment, we will
+          carefully listen to your symptoms, review your medical history, and provide guidance or treatment recommendations. If
+          further in-person evaluation is needed, we will help you arrange the appropriate next steps.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="operation">
+    <h2 class="mb-4">Preoperative / Presurgical Evaluation</h2>
+    <div class="row mobile-margin mx-5 align-items-center" style="flex-direction: row-reverse;">
+      <div class="mobile-width col-6 d-flex justify-content-center">
+        <img class="landscape-img mb-4" src="{{ site.images.consult }}">
+      </div>
+      <div class="mobile-width col-6 mx-auto">
+        <p>
+          If you are preparing for an outpatient surgery, we are here to help 
+          you move through surgery and recovery with confidence.
+          We will carefully review your respiratory health, discuss
+          any concerns you may have, and perform simple tests if needed. This
+          helps us understand your individual risk level and ensures that your
+          surgical team has all the information they need to keep you comfortable and safe.
+        </p>
+      </div>
+    </div>
+  </section>
+
   <section id="education">
     <h2 class="mb-4">Education</h2>
     <div class="row mobile-margin mx-5 align-items-center">
       <div class="mobile-width col-4 d-flex justify-content-center">
-        <img class="speaking-img mb-4" src="{{ site.images.speaking }}">
+        <img class="portrait-img mb-4" src="{{ site.images.speaking }}">
       </div>
       <div class="mobile-width col-8">
         <div class="row justify-content-around">
