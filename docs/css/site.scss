@@ -1,6 +1,10 @@
 --- 
 --- 
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #FCFCFC;
   color: black;
@@ -66,7 +70,7 @@ a {
 li {
   font-size: 1.2rem;
   font-family: "Source Sans 3", sans-serif;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
 
   @media (max-width: 550px) {
       font-size: 1rem !important;
@@ -76,6 +80,10 @@ li {
 hr {
   color: black;
   opacity: 0.5;
+}
+
+img {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
 }
 
 @media (max-width: 991px) {
@@ -127,9 +135,10 @@ hr {
 
 .hero-card {
   background-color: $off_white;
-  border-radius: 0.5rem;
+  border-radius: 10px;
   border: 2px solid $dark_blue;
   max-width: 70rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
 }
 
 .card-info {
@@ -142,7 +151,7 @@ hr {
 
 .profile-img {
   width: 90%;
-  border: 8px solid $light_blue;
+  border-radius: 10px;
 
   @media (max-width: 991px) {
       max-width: 400px;
@@ -164,8 +173,8 @@ hr {
   color: white;
   padding: 1.5rem 0;
   text-align: center;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .btn {
@@ -173,15 +182,16 @@ hr {
   color: white;
   font-size: 1.25rem;
   border: 2px solid $dark_blue;
-  border-radius: 0.25rem;
+  border-radius: 10px;
   text-wrap: nowrap;
   min-width: 8rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
 
   &:hover {
     background-color: $off_white;
     color: $dark_blue;
     border: 2px solid $dark-blue;
-    border-radius: 0.25rem;
+    border-radius: 10px;
     text-decoration: underline;
     transition: 0.4s ease-in-out;
   }
@@ -194,9 +204,10 @@ hr {
 .main {
   section {
     border: 2px solid $dark_blue;
-    border-radius: 0.5rem;
-    padding: 2rem 4rem;
-    margin: 3rem 0;
+    border-radius: 10px;
+    padding: 4rem;
+    margin-bottom: 6rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
 
     @media (max-width: 767px){
       padding: 2rem;
@@ -211,7 +222,7 @@ hr {
 .landscape-img {
   width: 100%;
   min-width: 350px;
-  border: 8px solid $light_blue;
+  border-radius: 10px;
   text-align: center;
 
   @media (max-width: 500px) {
@@ -222,7 +233,7 @@ hr {
 .portrait-img {
   width: 90%;
   min-width: 180px;
-  border: 8px solid $off_white;
+  border-radius: 10px;
 
   @media (max-width: 500px) {
     min-width: 200px;
@@ -249,8 +260,25 @@ hr {
   min-width: 240px;
 }
 
+.edu-card {
+  background: white;
+  padding: 1rem;
+  height: 85%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.info-card {
+  padding: 20px;
+  border-radius: 10px;
+  background: #f8f9fa;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
 .map {
   height: 400px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
 
   @media (max-width: 450px) {
     height: 200px;
