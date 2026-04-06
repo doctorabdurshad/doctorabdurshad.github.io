@@ -11,11 +11,20 @@ body {
 $off_white: #FCFCFC;
 $dark_blue: #00337f;
 $light_blue: #d9e2f0;
+$light_green: #d9f0e8;
 
 h1, h2, h3 {
   font-family: "Ledger", serif;
   font-weight: 500;
   font-style: normal;
+}
+
+h1 {
+  line-height: 1.5;
+}
+
+h2 {
+  margin-bottom: 1.8rem;
 }
 
 @media (min-width: 1200px) {
@@ -120,7 +129,7 @@ hr {
   background-color: $off_white;
   border-radius: 0.5rem;
   border: 2px solid $dark_blue;
-  max-width: 60rem;
+  max-width: 70rem;
 }
 
 .card-info {
@@ -218,6 +227,14 @@ hr {
   @media (max-width: 500px) {
     min-width: 200px;
   }
+}
+
+#counseling {
+  background-color: $light_green;
+}
+
+.max-w-55 {
+  max-width: 55rem;
 }
 
 #telemedicine, #education, #office {
