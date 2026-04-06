@@ -1,43 +1,157 @@
 <section id="hero" class="hero mb-0">
   <div class="d-flex justify-content-center">
-    <div class="hero-card">
-      <div class="card-info row m-0">
-        <div class="mobile-width mt-3 mobile-mb col-4 text-center">
-          <img class="profile-img" src="{{ site.images.profile }}">
+    <div class="hero-card-wrapper">
+      <div class="hero-card-inner" id="heroCard">
+
+        <!-- FRONT -->
+        <div class="hero-card front" id="cardFront">
+          <div class="card-info row m-0">
+            <div class="mobile-width mt-3 mobile-mb col-4 text-center">
+              <img class="profile-img" src="{{ site.images.profile }}">
+            </div>
+            <div class="mobile-width col-7">
+              <h1>Abdur R. Shad<br>MD-MPH</h1>
+              <hr class="mb-4">
+              <h2 class="mb-3">Internal Medicine, Pulmonary Medicine</h2>
+              <p class="mb-0">Board-certified physician with over 30 years of experience.</p>
+              <p class="mb-0">Expert diagnoses and treatment of lung and airway diseases.</p>
+              <p class="mb-0">Consult for smoking related diseases and cessation therapy.</p>
+              <p class="mb-4">Serving Morris County. See more below.</p>
+
+              <p class="p-link mb-0" onclick="handleFlip('office')">View Office Info</p>
+              <p class="p-link mb-0" onclick="handleFlip('insurance')">View Insurance Options</p>
+
+            </div>
+          </div>
+
+          <div class="card-contact row m-0">
+            <div class="col m-3">
+              <a href="tel:+19733094324" target="_blank" rel="noopener">
+                <button class="desktop-button btn px-4">
+                  <i class="bi bi-phone me-2"></i>Call: 973-309-4324
+                </button>
+                <button class="mobile-button btn px-4">
+                  <i class="bi bi-phone me-2"></i>Call
+                </button>
+              </a>
+            </div>
+            <div class="col m-3">
+              <a href="mailto:shadmdnj@outlook.com" target="_blank" rel="noopener">
+                <button class="desktop-button btn px-3">
+                  <i class="bi bi-envelope me-2"></i>Email: shadmdnj@outlook.com
+                </button>
+                <button class="mobile-button btn px-3">
+                  <i class="bi bi-envelope me-2"></i>Email
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="mobile-width col-7">
-          <h1>Abdur R. Shad<br>MD-MPH</h1>
-          <hr class="mb-4">
-          <h2 class="mb-3">Internal Medicine, Pulmonary Medicine</h2>
-          <p class="mb-0">Board-certified physician with over 30 years of experience.</p>
-          <p class="mb-0">Expert diagnoses and treatment of lung and airway&nbsp;diseases.</p>
-          <p class="mb-0">Consult for smoking related diseases and cessation&nbsp;therapy.</p>
-          <p class="mb-4">Serving Morris County.</p>
-          <p class="p-link mb-0" onclick="navScroll('office');">View Office Info</p>
-          <p class="p-link mb-0" onclick="navScroll('insurance');">View Insurance Options</p>
+
+        <!-- BACK: OFFICE -->
+        <div class="hero-card back" id="cardOffice">
+          <div class="p-3">
+
+            <h2 class="text-center">Office Info</h2>
+
+            <div class="row mx-2 align-items-center" style="flex-direction: row-reverse;">
+              
+              <div class="mobile-width col-7">
+                <iframe class="map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.123456789012!2d-74.481234567890!3d40.889876543210!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3a1234567890%3A0xabcdef1234567890!2s16%20Pocono%20Rd%2C%20Suite%20311%2C%20Denville%2C%20NJ%2007834!5e0!3m2!1sen!2sus!4v0000000000000!5m2!1sen!2sus"
+                  width="100%" style="border:0;">
+                </iframe>
+              </div>
+
+              <div class="mobile-width col-5 text-center">
+                <div class="info-card">
+                  <a href="https://maps.google.com/maps?ll=40.893625,-74.475172&z=14&t=m&hl=en&gl=US&mapclient=embed&q=16%20Pocono%20Rd%20Suite%20311%20Denville%2C%20NJ%2007834"
+                  target="_blank">
+                    <p>
+                      <strong>Address:</strong>
+                      <br>
+                      16 Pocono Rd,
+                      <br>
+                      Suite 311,
+                      <br>
+                      Denville, NJ-07834
+                    </p>
+                  </a>
+                </div>
+
+                <div class="info-card office-hours mt-3">
+                  <p><strong>Office Hours:</strong></p>
+                  <div class="hours-row">
+                    <p>Monday–Wednesday:</p>
+                    <p>8 AM – 5 PM</p>
+                  </div>
+                  <div class="hours-row">
+                    <p>Thursday:</p>
+                    <p>10 AM – 7 PM</p>
+                  </div>
+                  <div class="hours-row">
+                    <p>Friday:</p>
+                    <p>8 AM – 11 AM & 3 PM – 7 PM</p>
+                  </div>
+                  <div class="hours-row">
+                    <p>Saturday:</p>
+                    <p>11 AM – 3 PM (By appointment only)</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="text-center">
+              <button onclick="flipBack()" class="btn mt-2">Back</button>
+            </div>
+
+          </div>
         </div>
-      </div>
-      <div class="card-contact row m-0">
-        <div class="col m-3">
-          <a href="tel:+19733094324" target="_blank" rel="noopener">
-            <button class="desktop-button btn px-4">
-              <i class="bi bi-phone me-2"></i>Call: 973-309-4324
-            </button>
-            <button class="mobile-button btn px-4">
-              <i class="bi bi-phone me-2"></i>Call
-            </button>
-          </a>
+
+
+        <!-- BACK: INSURANCE -->
+        <div class="hero-card back" id="cardInsurance">
+          <div class="p-4">
+
+            <h2 class="text-center">Insurances</h2>
+
+            <div class="mx-3">
+              <p>We accept most health insurances such as:</p>
+
+              <div class="row">
+                <div class="col">
+                  <ul class="mb-0" style="list-style-type: none;">
+                    <li><i class="bi bi-check-circle-fill me-2"></i> Amerihealth</li>
+                    <li><i class="bi bi-check-circle-fill me-2"></i> Americhoice</li>
+                    <li><i class="bi bi-check-circle-fill me-2"></i> Medicare</li>
+                    <li><i class="bi bi-check-circle-fill me-2"></i> Medicaid</li>
+                    <li><i class="bi bi-check-circle-fill me-2"></i> Aetna</li>
+                    <li><i class="bi bi-check-circle-fill me-2"></i> AmeriGroup</li>
+                    <li><i class="bi bi-check-circle-fill me-2"></i> Cigna</li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <ul style="list-style-type: none;">
+                    <li><i class="bi bi-check-circle-fill me-2"></i> Horizon BCBS</li>
+                    <li><i class="bi bi-check-circle-fill me-2"></i> Health Net</li>
+                    <li><i class="bi bi-check-circle-fill me-2"></i> MagnaCare</li>
+                    <li><i class="bi bi-check-circle-fill me-2"></i> QualCare</li>
+                    <li><i class="bi bi-check-circle-fill me-2"></i> Railroad Medicare</li>
+                    <li><i class="bi bi-check-circle-fill me-2"></i> United</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center pt-5">
+              <button onclick="flipBack()" class="btn">Back</button>
+            </div>
+
+          </div>
         </div>
-        <div class="col m-3">
-          <a href="mailto:shadmdnj@outlook.com" target="_blank" rel="noopener">
-            <button class="desktop-button btn px-3">
-              <i class="bi bi-envelope me-2"></i>Email: shadmdnj@outlook.com
-            </button>
-            <button class="mobile-button btn px-3">
-              <i class="bi bi-envelope me-2"></i>Email
-            </button>
-          </a>
-        </div>
+
+
       </div>
     </div>
   </div>

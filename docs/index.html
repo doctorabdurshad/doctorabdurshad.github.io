@@ -8,15 +8,15 @@ layout: default
 
   <section id="internal" class="mt-0">
     <h2>Internal Medicine</h2>
-    <div class="row mobile-margin mx-5" style="flex-direction: row-reverse;">
-      <p>
-          Comprehensive treatment for all systems of the body, focusing on prevention, 
-          diagnosis, and management of a wide range of medical conditions including:
-      </p>
-      <div class="col d-flex justify-content-center">
+    <p>
+      Comprehensive treatment for all systems of the body, focusing on prevention, 
+      diagnosis, and management of a wide range of medical conditions including:
+    </p>
+    <div class="row mobile-margin mx-5 align-items-center" style="flex-direction: row-reverse;">
+      <div class="mobile-width col-6 d-flex justify-content-center">
         <img class="landscape-img mb-4" src="{{ site.images.internal }}">
       </div>
-      <div class="col">
+      <div class="mobile-width col-6">
         <ul style="list-style-type: circle;">
           <li>Chronic diseases (diabetes, hypertension, cholesterol)</li>
           <li>Thyroid and hormonal disorders</li>
@@ -24,22 +24,25 @@ layout: default
           <li>Digestive and kidney disorders</li>
           <li>Obesity and metabolic disorders</li>
           <li>Acute illnesses and infections</li>
+          <li>Annual physical</li>
+          <li>Employment physical</li>
+          <li>School physical</li>
         </ul>
       </div>
     </div>
   </section>
 
   <section id="pulmonary" class="mt-0">
-    <h2>Diagnose and Manage Diseases</h2>
-    <div class="row mobile-margin mx-5  " style="flex-direction: row-reverse;">
-      <p>
-          In addition to providing education and guidance, we diagnose and manage a wide range 
-          of diseases related to the lungs and airways, including but not limited to:
-      </p>
-      <div class="col d-flex justify-content-center">
+    <h2>Pulmonary Diseases</h2>
+    <p>
+      In addition to providing education and guidance, we diagnose and manage a wide range 
+      of diseases related to the lungs and airways, including but not limited to:
+    </p>
+    <div class="row mobile-margin mx-5 align-items-center" style="flex-direction: row-reverse;">
+      <div class="mobile-width col-6 d-flex justify-content-center">
         <img class="landscape-img mb-4" src="{{ site.images.nebulizer }}">
       </div>
-      <div class="col">
+      <div class="mobile-width col-6">
         <ul style="list-style-type: circle;">
           <li>Upper airway and lung conditions (sinus, airway, and pleural diseases)</li>
           <li>Disease related to airborne exposure at work or at home</li>
@@ -172,19 +175,19 @@ layout: default
   <section id="office">
     <h2>Office Info</h2>
     <div class="row mx-3 align-items-center" style="flex-direction: row-reverse;">
-      <div class="mobile-width col-8">
+      <div class="mobile-width col-6">
         <iframe class="map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.123456789012!2d-74.481234567890!3d40.889876543210!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3a1234567890%3A0xabcdef1234567890!2s16%20Pocono%20Rd%2C%20Suite%20311%2C%20Denville%2C%20NJ%2007834!5e0!3m2!1sen!2sus!4v0000000000000!5m2!1sen!2sus"
           width="100%" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
-      <div class="mobile-width col-4 text-center justify-content-center">
+      <div class="mobile-width col-6 text-center justify-content-center">
         <div class="info-card">
         <a href="https://maps.google.com/maps?ll=40.893625,-74.475172&z=14&t=m&hl=en&gl=US&mapclient=embed&q=16%20Pocono%20Rd%20Suite%20311%20Denville%2C%20NJ%2007834"
         target="_blank" rel="noopener">
           <p>
-            Address:
+            <strong>Address:</strong>
             <br>
             16 Pocono Rd,
             <br>
@@ -195,23 +198,29 @@ layout: default
         </a>
         </div>
         <br>
-        <div class="info-card">
-        <p>
-          Office Hours:
-          <br>
-          8 AM-5 PM Mon-Wed
-          <br>
-          10 AM-7 PM Thu
-          <br>
-          8 AM-11 AM, 3 PM-7 PM Fri
-          <br>
-          By appointment 11 AM-3 PM Sat for those with weekday conflicts.
-        </p>
+        <div class="info-card office-hours">
+          <p><strong>Office Hours:</strong></p>
+          <div class="hours-row">
+            <p>Monday–Wednesday:</p>
+            <p>8:00 AM – 5:00 PM</p>
+          </div>
+          <div class="hours-row">
+            <p>Thursday:</p>
+            <p>10:00 AM – 7:00 PM</p>
+          </div>
+          <div class="hours-row">
+            <p>Friday:</p>
+            <p>8:00 AM – 11:00 AM & 3:00 PM – 7:00 PM</p>
+          </div>
+          <div class="hours-row">
+            <p>Saturday:</p>
+            <p>11:00 AM – 3:00 PM (By appointment only)</p>
+          </div>
         </div>
       </div>
     </div>
     <div class="text-center pt-5 px-5 row m-0">
-      <p class="text-black">Reach out to make an appointment:</p>
+      <p class="text-black"><strong>Reach out to make an appointment:</strong></p>
       <div class="col m-3">
         <a href="tel:+19733094324" target="_blank" rel="noopener">
           <button class="desktop-button btn px-4">
