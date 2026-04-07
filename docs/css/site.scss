@@ -13,6 +13,7 @@ body {
 }
 
 $off_white: #FCFCFC;
+$less_off_white: #f1f1f1;
 $dark_blue: #00337f;
 $light_blue: #d9e2f0;
 $light_green: #d9f0e8;
@@ -47,6 +48,12 @@ p {
   font-weight: 400;
   font-style: normal;
   line-height: 1.8;
+
+  i {
+    font-size: 0.8rem;
+    position: relative;
+    top: -2px;
+  }
 
   @media (max-width: 550px) {
     font-size: 1rem !important;
@@ -204,7 +211,7 @@ img {
   border-radius: 10px;
   border: 2px solid $dark_blue;
   max-width: 70rem;
-  min-height: 37rem;
+  min-height: 43rem;
   box-shadow: 0 8px 24px rgba(0,0,0,0.08);
 }
 
@@ -313,6 +320,10 @@ img {
 
 .max-w-55 {
   max-width: 55rem;
+}
+
+#pulmonary, #telemedicine, #education, #office {
+  background-color: $less_off_white;
 }
 
 #internal, #operation, #insurance, #links {
