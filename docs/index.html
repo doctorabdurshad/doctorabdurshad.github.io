@@ -4,7 +4,7 @@ layout: default
 
 {% include hero.html %}
 
-<div class="main container">
+<div role="main" class="main container">
 
   <section id="internal" class="mt-0">
     <h2>Internal Medicine</h2>
@@ -14,7 +14,7 @@ layout: default
     </p>
     <div class="row mobile-margin mx-5 align-items-center" style="flex-direction: row-reverse;">
       <div class="mobile-width col-6 d-flex justify-content-center">
-        <img class="landscape-img mb-4" src="{{ site.images.internal }}">
+        <img class="landscape-img mb-4" src="{{ site.images.internal }}" alt="Stethoscope">
       </div>
       <div class="mobile-width col-6">
         <ul style="list-style-type: circle;">
@@ -40,7 +40,7 @@ layout: default
     </p>
     <div class="row mobile-margin mx-5 align-items-center" style="flex-direction: row-reverse;">
       <div class="mobile-width col-6 d-flex justify-content-center">
-        <img class="landscape-img mb-4" src="{{ site.images.nebulizer }}">
+        <img class="landscape-img mb-4" src="{{ site.images.nebulizer }}" alt="Nebulizer Patient">
       </div>
       <div class="mobile-width col-6">
         <ul style="list-style-type: circle;">
@@ -80,7 +80,7 @@ layout: default
     <h2>Telemedicine</h2>
     <div class="row mobile-margin mx-5 align-items-center">
       <div class="mobile-width col-4 d-flex justify-content-center">
-        <img class="portrait-img mb-4" src="{{ site.images.telemedicine }}">
+        <img class="portrait-img mb-4" src="{{ site.images.telemedicine }}" alt="Telemedicine Patient">
       </div>
       <div class="mobile-width col-7 mx-auto">
         <p>
@@ -102,7 +102,7 @@ layout: default
     <h2>Preoperative / Presurgical Evaluation</h2>
     <div class="row mobile-margin mx-5 align-items-center" style="flex-direction: row-reverse;">
       <div class="mobile-width col-6 d-flex justify-content-center">
-        <img class="landscape-img mb-4" src="{{ site.images.consult }}">
+        <img class="landscape-img mb-4" src="{{ site.images.consult }}" alt="Consultation Session">
       </div>
       <div class="mobile-width col-6 mx-auto">
         <p>
@@ -121,7 +121,7 @@ layout: default
     <h2>Education</h2>
     <div class="row mobile-margin mx-5 align-items-center">
       <div class="mobile-width col-4 d-flex justify-content-center">
-        <img class="portrait-img mb-4" src="{{ site.images.speaking }}">
+        <img class="portrait-img mb-4" src="{{ site.images.speaking }}" alt="Speaking at a Conference">
       </div>
       <div class="mobile-width col-6 mx-auto">
         <ul style="list-style: disc; padding: 0;">
@@ -168,8 +168,8 @@ layout: default
             <li><i class="bi bi-check-circle-fill me-2"></i> United</li>
           </ul>
         </div>
-        <p class="mt-3">Individuals without insurances will be charged on Medicare rates.</p>
       </div>
+      <p class="mt-3">Individuals without insurances will be charged on Medicare rates.</p>
     </div>
   </section>
 
@@ -177,7 +177,7 @@ layout: default
     <h2>Office Info</h2>
     <div class="row mx-3 align-items-center" style="flex-direction: row-reverse;">
       <div class="mobile-width col-6">
-        <iframe class="map"
+        <iframe title="Office Map" class="map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.123456789012!2d-74.481234567890!3d40.889876543210!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3a1234567890%3A0xabcdef1234567890!2s16%20Pocono%20Rd%2C%20Suite%20311%2C%20Denville%2C%20NJ%2007834!5e0!3m2!1sen!2sus!4v0000000000000!5m2!1sen!2sus"
           width="100%" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
@@ -220,8 +220,8 @@ layout: default
         </div>
       </div>
     </div>
-    <div class="text-center pt-5 row m-0">
-      <p class="text-black"><strong>Reach out to make an appointment:</strong></p>
+    <p class="text-center text-black pt-5"><strong>Reach out to make an appointment:</strong></p>
+    <div class="text-center row m-0">
       <div class="col m-3">
         <a href="tel:+19733094324" target="_blank" rel="noopener">
           <button class="desktop-button btn px-4">

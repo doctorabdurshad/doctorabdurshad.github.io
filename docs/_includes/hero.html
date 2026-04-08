@@ -1,4 +1,4 @@
-<section id="hero" class="hero mb-0">
+<header role="banner" id="hero" class="hero mb-0">
   <div class="d-flex justify-content-center">
     <div class="hero-card-wrapper">
       <div class="hero-card-inner" id="heroCard">
@@ -7,7 +7,7 @@
         <div class="hero-card front" id="cardFront">
           <div class="card-info row m-0">
             <div class="mobile-width mt-3 mobile-mb col-4 text-center">
-              <img class="profile-img" src="{{ site.images.profile }}">
+              <img fetchpriority="high" class="profile-img" src="{{ site.images.profile }}" alt="Profile Picture">
             </div>
             <div class="mobile-width col-8">
               <h1>Abdur R. Shad MD MPH FCCP</h1>
@@ -22,8 +22,8 @@
               <p class="mb-3"><i class="bi bi-circle-fill text-success me-2"></i>Accepting new patients.</p>
 
 
-              <p class="p-link mb-0" onclick="handleFlip('office')">View Office Location and Map </p>
-              <p class="p-link mb-0" onclick="handleFlip('insurance')">View Accepted Insurances</p>
+              <a class="p-link mb-0" onclick="handleFlip('office')">View Office Location and Map </a>
+              <a class="p-link mb-0" onclick="handleFlip('insurance')">View Accepted Insurances</a>
               <p class="mb-0">Individuals without insurances will be charged on Medicare rates.</p>
 
             </div>
@@ -62,7 +62,7 @@
             <div class="row mx-2 align-items-center" style="flex-direction: row-reverse;">
               
               <div class="mobile-width col-7">
-                <iframe class="map"
+                <iframe title="Office Map" class="map"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.123456789012!2d-74.481234567890!3d40.889876543210!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3a1234567890%3A0xabcdef1234567890!2s16%20Pocono%20Rd%2C%20Suite%20311%2C%20Denville%2C%20NJ%2007834!5e0!3m2!1sen!2sus!4v0000000000000!5m2!1sen!2sus"
                   width="100%" style="border:0;">
                 </iframe>
@@ -160,4 +160,4 @@
       </div>
     </div>
   </div>
-</section>
+</header>

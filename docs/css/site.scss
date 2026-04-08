@@ -6,10 +6,12 @@ html {
 }
 
 body {
+  font-family: "Source Sans 3", sans-serif;
   background-color: #FCFCFC;
   color: black;
   font-size: 1.2rem;
   font-weight: 400;
+  margin: 0;
 }
 
 $off_white: #FCFCFC;
@@ -43,7 +45,6 @@ h3 {
 }
 
 p {
-  font-family: "Source Sans 3", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -71,6 +72,10 @@ a {
   &:hover {
     text-decoration: underline;
     cursor: pointer;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 1rem !important;
   }
 }
 
@@ -224,7 +229,7 @@ img {
 }
 
 .profile-img {
-  width: 90%;
+  width: round(nearest, 90%, 1px);
   border-radius: 10px;
 
   @media (max-width: 991px) {
@@ -233,8 +238,10 @@ img {
 }
 
 .p-link {
+  display: block;
   color: $dark_blue;
   text-decoration: none;
+  line-height: 1.8;
 
   &:hover {
     text-decoration: underline;
@@ -294,7 +301,7 @@ img {
 }
 
 .landscape-img {
-  width: 100%;
+  width: round(nearest, 100%, 1px);
   min-width: 350px;
   border-radius: 10px;
   text-align: center;
@@ -305,7 +312,7 @@ img {
 }
 
 .portrait-img {
-  width: 90%;
+  width: round(nearest, 90%, 1px);
   min-width: 180px;
   border-radius: 10px;
 
