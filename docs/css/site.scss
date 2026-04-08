@@ -229,7 +229,7 @@ img {
 }
 
 .profile-img {
-  width: round(nearest, 90%, 1px);
+  width: Round(nearest, 90%, 1px);
   border-radius: 10px;
 
   @media (max-width: 991px) {
@@ -301,7 +301,7 @@ img {
 }
 
 .landscape-img {
-  width: round(nearest, 100%, 1px);
+  width: Round(nearest, 100%, 1px);
   min-width: 350px;
   border-radius: 10px;
   text-align: center;
@@ -312,7 +312,7 @@ img {
 }
 
 .portrait-img {
-  width: round(nearest, 90%, 1px);
+  width: Round(nearest, 90%, 1px);
   min-width: 180px;
   border-radius: 10px;
 
