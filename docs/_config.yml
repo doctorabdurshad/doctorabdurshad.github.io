@@ -13,13 +13,36 @@ url: "https://shadmd.com/"
 
 # Compressed with TinyPNG
 images:
-  favicon: "/images/favicon.ico"
+  favicon: "/favicon.ico"
   profile: "/images/profile.png"
   internal: "/images/internal.png"
   nebulizer: "/images/nebulizer.png"
   telemedicine: "/images/telemedicine.png"
   consult: "/images/consultation.png"
   speaking: "/images/speaking.png"
+
+insurances:
+  left:
+    - Aetna (HMO, PPO, Medicare, Medicaid)
+    - AmeriGroup / WellPoint
+    - AmeriHealth
+    - Anthem / Empire BCBS
+    - Cigna (Commercial & Medicare)
+    - Clover Health
+    - EmblemHealth / GHI
+    - HealthFirst / HealthNet
+    - Horizon BCBSNJ (All Plans & Omnia)
+    - Horizon NJ Health / D-SNP
+  right:
+    - Local 1199 / 825 (via Aetna / MagnaCare)
+    - MagnaCare
+    - Medicaid NJ
+    - Medicare NJ / Railroad Medicare
+    - OSCAR NJ / NY (via QualCare)
+    - Oxford UHC (All Plans)
+    - Tricare (including WMC via AmeriGroup)
+    - UnitedHealthcare (Commercial, Medicare, Dual Complete)
+    - WellCare / Fidelis (Medicare & Medicaid)
 
 # Build settings
 theme: minima

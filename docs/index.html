@@ -149,28 +149,16 @@ layout: default
       <div class="row">
         <div class="col">
           <ul class="mb-0" style="list-style-type: none;">
-            <li><i class="bi bi-check-circle-fill me-2"></i> Aetna (HMO, PPO, Medicare, Medicaid)</li>
-            <li><i class="bi bi-check-circle-fill me-2"></i> AmeriGroup</li>
-            <li><i class="bi bi-check-circle-fill me-2"></i> AmeriHealth / WellPoint</li>
-            <li><i class="bi bi-check-circle-fill me-2"></i> Anthem / Empire BCBS</li>
-            <li><i class="bi bi-check-circle-fill me-2"></i> Cigna (Commercial & Medicare)</li>
-            <li><i class="bi bi-check-circle-fill me-2"></i> EmblemHealth / GHI</li>
-            <li><i class="bi bi-check-circle-fill me-2"></i> HealthFirst / HealthNet</li>
-            <li><i class="bi bi-check-circle-fill me-2"></i> Horizon BCBSNJ (All Plans & Omnia)</li>
-            <li><i class="bi bi-check-circle-fill me-2"></i> Horizon NJ Health / D-SNP</li>
+            {% for insurance in site.insurances.left %}
+            <li><i class="bi bi-check-circle-fill me-2"></i> {{ insurance }}</li>
+            {% endfor %}
           </ul>
         </div>
         <div class="col">
           <ul style="list-style-type: none;">
-            <li><i class="bi bi-check-circle-fill me-2"></i> Local 1199 / 825 (via Aetna / MagnaCare)</li>
-            <li><i class="bi bi-check-circle-fill me-2"></i> MagnaCare</li>
-            <li><i class="bi bi-check-circle-fill me-2"></i> Medicaid NJ</li>
-            <li><i class="bi bi-check-circle-fill me-2"></i> Medicare NJ / Railroad Medicare</li>
-            <li><i class="bi bi-check-circle-fill me-2"></i> OSCAR NJ / NY (via QualCare)</li>
-            <li><i class="bi bi-check-circle-fill me-2"></i> Oxford UHC (All Plans)</li>
-            <li><i class="bi bi-check-circle-fill me-2"></i> Tricare (including WMC via AmeriGroup)</li>
-            <li><i class="bi bi-check-circle-fill me-2"></i> UnitedHealthcare (Commercial, Medicare, Dual Complete)</li>
-            <li><i class="bi bi-check-circle-fill me-2"></i> WellCare / Fidelis (Medicare & Medicaid)</li>
+            {% for insurance in site.insurances.right %}
+            <li><i class="bi bi-check-circle-fill me-2"></i> {{ insurance }}</li>
+            {% endfor %}
           </ul>
         </div>
       </div>
