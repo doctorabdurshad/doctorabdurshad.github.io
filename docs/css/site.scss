@@ -120,6 +120,10 @@ img {
   .mobile-mb {
     margin-bottom: 2rem !important;
   }
+
+  .row > * {
+    padding: 0;
+  }
 }
 
 .mobile-button {
@@ -364,6 +368,20 @@ img {
 .office-hours .hours-row {
   display: flex;
   justify-content: space-between;
+}
+
+.office-mobile {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .office-desktop {
+    display: none;
+  }
+
+  .office-mobile {
+    display: block
+  }
 }
 
 .map {
